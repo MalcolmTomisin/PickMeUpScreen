@@ -1,13 +1,12 @@
 import React from 'react';
-import { View } from 'react-native';
 
-import { TextView } from './styles';
+import { TextView, ContainerView } from './styles';
 
 const login = () => {
   return (
-    <View>
+    <ContainerView>
       <TextView>login Screen</TextView>
-    </View>
+    </ContainerView>
   );
 };
 
