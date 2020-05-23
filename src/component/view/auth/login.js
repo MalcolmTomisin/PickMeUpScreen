@@ -19,6 +19,7 @@ import {
   BottomText,
   InputViewContainer,
 } from './styles';
+import dimens from '../../../utils/dimens';
 import {
   GoogleSignin,
   GoogleSigninButton,
@@ -34,8 +35,7 @@ const login = () => {
   );
   const [phoneNumber, setPhoneNumber] = useState('');
   const [withFlag, setWithFlag] = useState(true);
-  const [withEmoji, setWithEmoji] = useState(true)
-  const [withFilter, setWithFilter] = useState(true)
+  const [withFilter, setWithFilter] = useState(true);
   const [withCallingCode, setWithCallingCode] = useState(true)
   const onBlur = () => {
     const formattedNumber = formatNumber(`+234${phoneNumber.replace(/^\+64/, "")}`, "International")
@@ -65,7 +65,6 @@ const login = () => {
               withFlag,
               withCountryNameButton,
               withCallingCode,
-              withEmoji,
               onSelect,
             }}
             visible
@@ -92,7 +91,7 @@ const login = () => {
             <FacebookIcon source={require('../../../assets/facebook.png')} />
           </FacebookButton>
           <GoogleSigninButton
-            style={{ width: 160, height: 40 }}
+            style={{ width: dimens.BUTTON_WIDTH, height: dimens.BUTTON_WIDTH }}
             size={GoogleSigninButton.Size.Wide}
             color={GoogleSigninButton.Color.Dark}
           />
