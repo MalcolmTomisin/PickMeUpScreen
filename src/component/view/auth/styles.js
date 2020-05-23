@@ -7,11 +7,7 @@ import Button from '../../widget/button';
 import BottomCard from '../../widget/bottomView';
 
 const TextView = styled(Text)`
-text-align: center;
-justify-content: center;
-align-items: center;
 font-size: 45px;
-color: white;
 `;
 
 const LogoView = styled(Logo)`
@@ -36,7 +32,7 @@ padding: 10px;
 margin-left: -10%;
 `;
 
-const IntroTextView = styled(TextView)`
+const IntroTextView = styled(Text)`
 font-size: 30px;
 text-align: left;
 margin-top: 15%;
@@ -81,7 +77,7 @@ justify-content: center;
 margin-right: 8px;
 `;
 
-const ButtonText = styled(TextView)`
+const ButtonText = styled(Text)`
 font-size: 18px;
 color: white;
 text-align: center;
@@ -111,7 +107,7 @@ const BottomTextContainer = styled(View)`
 
 `;
 
-const BottomText = styled(TextView)`
+const BottomText = styled(Text)`
 margin-bottom: 10px;
 font-size: 16px;
 `;
