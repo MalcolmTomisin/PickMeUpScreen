@@ -91,7 +91,7 @@ const login = () => {
             <FacebookIcon source={require('../../../assets/facebook.png')} />
           </FacebookButton>
           <GoogleSigninButton
-            style={{ width: dimens.BUTTON_WIDTH, height: dimens.BUTTON_WIDTH }}
+            style={{ width: dimens.BUTTON_WIDTH, height: dimens.BUTTON_HEIGHT }}
             size={GoogleSigninButton.Size.Wide}
             color={GoogleSigninButton.Color.Dark}
           />
